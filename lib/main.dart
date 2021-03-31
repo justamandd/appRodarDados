@@ -19,15 +19,19 @@ class _GameDadosState extends State<GameDados> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Jogo dos dados'),
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.green,
+        centerTitle: true,
       ),
       body: Container(
         padding: EdgeInsets.all(25),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Text('Rode os dados', style: TextStyle(fontWeight: FontWeight.bold)),
+            Text('Rode os dados', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 50), textAlign: TextAlign.center,),
             RaisedButton(
               child: Text('RODA MARIA'),
+              color: Colors.green,
               onPressed: (){
                 Navigator.push(
                   context,

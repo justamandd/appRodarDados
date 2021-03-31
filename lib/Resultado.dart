@@ -31,7 +31,8 @@ class _ResultadoState extends State<Resultado> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Jogo dos dados'),
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.green,
+        centerTitle: true,
       ),
       body: Container(
         padding: EdgeInsets.all(25),
